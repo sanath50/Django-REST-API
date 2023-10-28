@@ -217,14 +217,14 @@ class ContactAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'description', 'email')
 ```
 
-7) Migrations - Please use the following command to migrate the new model configuration.
+7) Migrations - Please use the following command to migrate the new model configuration. cd.. to backend folder and then make migrations.
 
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-8) Call our endpoints - Here are the requests we can make to our new endpoint.
+8) Call our endpoints - Here are the requests we can make to our new endpoint. Deactivate the virtual environment and then type docker-compose up -d --build 
 
 >Note: change 'localhost' to 'api' if you make the calls via Docker Decktop.
 
